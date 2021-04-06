@@ -56,15 +56,39 @@
 		F37F1027261BF021001D47DC /* Kosmo */ = {
 			isa = PBXGroup;
 			children = (
+				F3D0AAEA261C07C2003A661A /* models */,
+				F3D0AAE9261C07B2003A661A /* views */,
+				F3D0AAE8261C07A4003A661A /* controllers */,
 				F37F1028261BF021001D47DC /* AppDelegate.swift */,
 				F37F102A261BF021001D47DC /* SceneDelegate.swift */,
-				F37F102C261BF021001D47DC /* ViewController.swift */,
-				F37F102E261BF021001D47DC /* Main.storyboard */,
 				F37F1031261BF022001D47DC /* Assets.xcassets */,
-				F37F1033261BF022001D47DC /* LaunchScreen.storyboard */,
 				F37F1036261BF022001D47DC /* Info.plist */,
 			);
 			path = Kosmo;
+			sourceTree = "<group>";
+		};
+		F3D0AAE8261C07A4003A661A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F37F102C261BF021001D47DC /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F3D0AAE9261C07B2003A661A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F37F102E261BF021001D47DC /* Main.storyboard */,
+				F37F1033261BF022001D47DC /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F3D0AAEA261C07C2003A661A /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
