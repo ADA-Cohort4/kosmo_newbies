@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5v9-PE-UKM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TowerOfHanoiViewController-->
+        <scene sceneID="llB-If-cez">
+            <objects>
+                <viewController title="TowerOfHanoiViewController" id="5v9-PE-UKM" customClass="TOHViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACK-kU-VzT">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4O-ky-huc">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Menara Hanoi" id="PqT-Rq-YRg">
+                                        <barButtonItem key="backBarButtonItem" title="kembali" id="NUz-3l-EHH"/>
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="GGh-nf-n3D">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="zkj-Ks-2eY">
+                                                <rect key="frame" x="16" y="11" width="13" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="chevron.backward" catalog="system"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KosmoBG" translatesAutoresizingMaskIntoConstraints="NO" id="NOz-Uh-jBJ">
+                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTz-ZR-kbe">
+                                <rect key="frame" x="16" y="716" width="358" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.51395016910000002" green="0.57226431369999997" blue="0.91768413780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Periksa">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="systemGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljC-7j-UgL">
+                                <rect key="frame" x="23" y="212" width="344" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-3D-EyS">
+                                        <rect key="frame" x="306" y="13" width="24.333333333333332" height="23.666666666666668"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tower" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-j7-rYz" userLabel="Tower1">
+                                        <rect key="frame" x="26" y="174" width="82" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tower" translatesAutoresizingMaskIntoConstraints="NO" id="mUR-ZX-gms" userLabel="Tower2">
+                                        <rect key="frame" x="131" y="174" width="82" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tower" translatesAutoresizingMaskIntoConstraints="NO" id="Mp8-Ld-Qgx" userLabel="Tower3">
+                                        <rect key="frame" x="238" y="174" width="82" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymL-5H-yA5">
+                                        <rect key="frame" x="36" y="228" width="62" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.24382644889999999" green="0.2413474619" blue="0.3294221759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UJ9-g8-qoL" appends="YES" id="iwM-wk-FDg"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CND-Xu-ZVg">
+                                        <rect key="frame" x="42" y="213" width="51" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.51395016910000002" green="0.57226431369999997" blue="0.91768413780000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="RyE-8M-GmV" appends="YES" id="Ksv-t1-srS"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZZ-AK-Ime">
+                                        <rect key="frame" x="48" y="198" width="39" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.6763079166" green="0.54048788550000004" blue="0.89807504419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="7Da-jC-3bH" appends="YES" id="Ftn-4t-KVx"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Qp-gl-BY7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackBtn" destination="zkj-Ks-2eY" id="beE-d5-ELo"/>
+                        <outlet property="CheckBtn" destination="WTz-ZR-kbe" id="E4I-Fp-myH"/>
+                        <outlet property="Disk1" destination="TZZ-AK-Ime" id="R3n-f1-0ac"/>
+                        <outlet property="Disk2" destination="CND-Xu-ZVg" id="KQM-wF-jFJ"/>
+                        <outlet property="Disk3" destination="ymL-5H-yA5" id="3k1-qu-GvJ"/>
+                        <outlet property="GameView" destination="ljC-7j-UgL" id="PVq-v0-GwG"/>
+                        <outlet property="InfoBtn" destination="yOa-3D-EyS" id="nah-Hd-aKe"/>
+                        <outlet property="KosmoBG" destination="NOz-Uh-jBJ" id="8EC-Xy-5h2"/>
+                        <outlet property="NavBar" destination="w4O-ky-huc" id="8ae-17-d92"/>
+                        <outlet property="Pan1" destination="7Da-jC-3bH" id="bVP-jl-ha4"/>
+                        <outlet property="Pan2" destination="RyE-8M-GmV" id="f7F-qJ-MaZ"/>
+                        <outlet property="Pan3" destination="UJ9-g8-qoL" id="6WD-Dp-AmE"/>
+                        <outlet property="Tower1" destination="9wk-j7-rYz" id="Lxf-KL-eby"/>
+                        <outlet property="Tower2" destination="mUR-ZX-gms" id="BdS-cf-Pgm"/>
+                        <outlet property="Tower3" destination="Mp8-Ld-Qgx" id="2vp-Ej-cZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5M-VM-4Xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="7Da-jC-3bH" userLabel="PanDisk1"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="RyE-8M-GmV" userLabel="PanDisk2"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="UJ9-g8-qoL" userLabel="PanDisk3"/>
+            </objects>
+            <point key="canvasLocation" x="-115.38461538461539" y="50.473933649289094"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="KosmoBG" width="3142" height="3127"/>
+        <image name="Tower" width="84" height="72"/>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
