@@ -6,19 +6,27 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var planetImage: UIImageView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // test
-//        planetImage.image = #imageLiteral(resourceName: "Background aset for KOSMO-6")
     }
-
+    var player = AVPlayer()
+    var playerViewController = AVPlayerViewController()
+    @IBOutlet weak var buttonThumbnail: UIButton!
+    
+    @IBAction func playVideo (_ sender: UIView) {
+        let videoPath = Bundle.main.path(forResource: "example", ofType: "mp4")
+        let videoPathURL = URL(fileURLWithPath: videoPath!)
+        player = AVPlayer(url: videoPathURL)
+        playerViewController.player = player
+        
+        self.present(playerViewController, animated: true, completion: {
+            self.playerViewController.player?.play()
+        })
+    }
 }
 
