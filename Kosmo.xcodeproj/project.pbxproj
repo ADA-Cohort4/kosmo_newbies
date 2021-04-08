@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87EF82BD261C756A0050DAAF /* TowerOfHanoi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EF82BC261C756A0050DAAF /* TowerOfHanoi.storyboard */; };
 		F37F1029261BF021001D47DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F1028261BF021001D47DC /* AppDelegate.swift */; };
 		F37F102B261BF021001D47DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F102A261BF021001D47DC /* SceneDelegate.swift */; };
-		F37F102D261BF021001D47DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F102C261BF021001D47DC /* ViewController.swift */; };
+		F37F102D261BF021001D47DC /* TOHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F102C261BF021001D47DC /* TOHViewController.swift */; };
 		F37F1030261BF021001D47DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37F102E261BF021001D47DC /* Main.storyboard */; };
 		F37F1032261BF022001D47DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37F1031261BF022001D47DC /* Assets.xcassets */; };
 		F37F1035261BF022001D47DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37F1033261BF022001D47DC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87EF82BC261C756A0050DAAF /* TowerOfHanoi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TowerOfHanoi.storyboard; sourceTree = "<group>"; };
 		F37F1025261BF021001D47DC /* Kosmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37F1028261BF021001D47DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37F102A261BF021001D47DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F37F102C261BF021001D47DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F37F102C261BF021001D47DC /* TOHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOHViewController.swift; sourceTree = "<group>"; };
 		F37F102F261BF021001D47DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F37F1031261BF022001D47DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F37F1034261BF022001D47DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +72,7 @@
 		F3D0AAE8261C07A4003A661A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F37F102C261BF021001D47DC /* ViewController.swift */,
+				F37F102C261BF021001D47DC /* TOHViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -80,6 +82,7 @@
 			children = (
 				F37F102E261BF021001D47DC /* Main.storyboard */,
 				F37F1033261BF022001D47DC /* LaunchScreen.storyboard */,
+				87EF82BC261C756A0050DAAF /* TowerOfHanoi.storyboard */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				F37F1035261BF022001D47DC /* LaunchScreen.storyboard in Resources */,
 				F37F1032261BF022001D47DC /* Assets.xcassets in Resources */,
 				F37F1030261BF021001D47DC /* Main.storyboard in Resources */,
+				87EF82BD261C756A0050DAAF /* TowerOfHanoi.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F37F102D261BF021001D47DC /* ViewController.swift in Sources */,
+				F37F102D261BF021001D47DC /* TOHViewController.swift in Sources */,
 				F37F1029261BF021001D47DC /* AppDelegate.swift in Sources */,
 				F37F102B261BF021001D47DC /* SceneDelegate.swift in Sources */,
 			);
@@ -320,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.azrullah.Kosmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.azrullah.Kosmo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
