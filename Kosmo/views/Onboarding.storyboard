@@ -1,30 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0fF-0F-HTl">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="sBV-Kx-jzC">
+        <!--Onboarding View Controller-->
+        <scene sceneID="Hqw-RR-JrN">
             <objects>
-                <viewController id="QdU-8j-6nN" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xOy-X6-UIB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="0fF-0F-HTl" customClass="OnboardingViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z33-nO-wH8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wTg-ms-bnY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBN-PH-cov">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-gK-FUb">
+                                        <rect key="frame" x="-43" y="-110" width="470" height="470"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-Rz-NZ6">
+                                <rect key="frame" x="18" y="717" width="354" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.087009366670000005" green="0.113879096" blue="0.20203746450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="MULAI BELAJAR">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="0fF-0F-HTl" eventType="touchDown" id="yBS-4I-4YH"/>
+                                    <segue destination="d7m-Al-XGe" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5W2-mr-p5R"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-Qb-a6c">
+                                <rect key="frame" x="18" y="213" width="354" height="454"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <view verifyAmbiguity="off" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-fr-ZMs" userLabel="Feature 1">
+                                        <rect key="frame" x="0.0" y="121" width="340" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WbI-es-9Z4">
+                                                <rect key="frame" x="34" y="16" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w1t-1T-FCR">
+                                                        <rect key="frame" x="20" y="20.333333333333258" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageReference key="image" image="checkmark" catalog="system" symbolScale="medium" renderingMode="original"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Cara yang tepat belajar pemograman" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OT-Hg-TLv">
+                                                <rect key="frame" x="122" y="18" width="210" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view verifyAmbiguity="off" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCl-Ib-zD6" userLabel="Feature 2">
+                                        <rect key="frame" x="0.0" y="226" width="340" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMG-EK-D1L">
+                                                <rect key="frame" x="33" y="17" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2xP-eD-uYl">
+                                                        <rect key="frame" x="20" y="20.999999999999886" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageReference key="image" image="clock" catalog="system" symbolScale="medium" renderingMode="original"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Hemat waktu karena materi yang to the point" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dml-fy-rqk">
+                                                <rect key="frame" x="122" y="22" width="210" height="63"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view verifyAmbiguity="off" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W7O-e5-xfE" userLabel="Feature 2">
+                                        <rect key="frame" x="0.0" y="331" width="340" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dlN-2j-Kku">
+                                                <rect key="frame" x="35" y="8" width="65" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Li-Iu-1qn">
+                                                        <rect key="frame" x="20" y="20.666666666666742" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageReference key="image" image="bolt" catalog="system" symbolScale="medium" renderingMode="original"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Bisa belajar dimana saja dan kapan saja" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5g-it-ImB">
+                                                <rect key="frame" x="122" y="14" width="210" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="SELAMAT DATANG DI KOSMO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5F-PB-sPt">
+                                        <rect key="frame" x="36" y="52" width="282" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IS1-0O-r0Y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="H0o-MP-h8p"/>
+                    <connections>
+                        <outlet property="box" destination="Hd4-Qb-a6c" id="ln2-t8-caj"/>
+                        <outlet property="icon" destination="WbI-es-9Z4" id="b3n-ja-DpH"/>
+                        <outlet property="icon2" destination="uMG-EK-D1L" id="GFI-VJ-npo"/>
+                        <outlet property="icon3" destination="dlN-2j-Kku" id="D4v-5f-PWP"/>
+                        <outlet property="startLearning" destination="kLA-Rz-NZ6" id="HF5-X9-dFA"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ajT-JS-jKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4T-vt-Lnv" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="116"/>
+            <point key="canvasLocation" x="1064.6153846153845" y="93.127962085308056"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="vKd-lQ-MaZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="d7m-Al-XGe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Sif-17-7KJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6K-1n-W4b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.9230769230769" y="92.417061611374407"/>
         </scene>
     </scenes>
     <resources>
+        <image name="BG1.png" width="3142" height="3127"/>
+        <image name="bolt" catalog="system" width="101" height="128"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
