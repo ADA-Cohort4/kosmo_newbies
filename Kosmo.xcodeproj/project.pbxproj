@@ -10,6 +10,13 @@
 		F32FD827261D459C00B57581 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C70718261D2D32004DDB4E /* OnboardingViewController.swift */; };
 		F32FD835261D65B300B57581 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F32FD834261D65B300B57581 /* Onboarding.storyboard */; };
 		87EF82BD261C756A0050DAAF /* TowerOfHanoi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EF82BC261C756A0050DAAF /* TowerOfHanoi.storyboard */; };
+		EC17FBE2261CA407002CE4A4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC17FBE1261CA407002CE4A4 /* Home.storyboard */; };
+		EC17FBEF261CAF80002CE4A4 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17FBEE261CAF80002CE4A4 /* TableViewCell.swift */; };
+		EC17FBF2261CB0A4002CE4A4 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17FBF1261CB0A4002CE4A4 /* Challenge.swift */; };
+		EC17FC2D261E020E002CE4A4 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17FC2C261E020E002CE4A4 /* ChallengeController.swift */; };
+		EC17FC31261F0A07002CE4A4 /* ChallengeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC17FC30261F0A07002CE4A4 /* ChallengeView.xib */; };
+		EC17FC38261F0AF3002CE4A4 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17FC37261F0AF3002CE4A4 /* ChallengeView.swift */; };
+		EC17FC40261F5F84002CE4A4 /* ChallengePopupControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17FC3F261F5F84002CE4A4 /* ChallengePopupControllerViewController.swift */; };
 		F37F1029261BF021001D47DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F1028261BF021001D47DC /* AppDelegate.swift */; };
 		F37F102B261BF021001D47DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F102A261BF021001D47DC /* SceneDelegate.swift */; };
 		F37F102D261BF021001D47DC /* TOHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F102C261BF021001D47DC /* TOHViewController.swift */; };
@@ -24,6 +31,13 @@
 /* Begin PBXFileReference section */
 		F32FD834261D65B300B57581 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		87EF82BC261C756A0050DAAF /* TowerOfHanoi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TowerOfHanoi.storyboard; sourceTree = "<group>"; };
+		EC17FBE1261CA407002CE4A4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EC17FBEE261CAF80002CE4A4 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EC17FBF1261CB0A4002CE4A4 /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Challenge.swift; path = Kosmo/model/Challenge.swift; sourceTree = SOURCE_ROOT; };
+		EC17FC2C261E020E002CE4A4 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = "<group>"; };
+		EC17FC30261F0A07002CE4A4 /* ChallengeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeView.xib; sourceTree = "<group>"; };
+		EC17FC37261F0AF3002CE4A4 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		EC17FC3F261F5F84002CE4A4 /* ChallengePopupControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengePopupControllerViewController.swift; sourceTree = "<group>"; };
 		F37F1025261BF021001D47DC /* Kosmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kosmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37F1028261BF021001D47DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F37F102A261BF021001D47DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC17FBF9261D36ED002CE4A4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EC17FBF1261CB0A4002CE4A4 /* Challenge.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		F37F101C261BF021001D47DC = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +92,7 @@
 			children = (
 				F3D0AB02261C44DC003A661A /* assets */,
 				F3D0AAEA261C07C2003A661A /* models */,
+				EC17FBF9261D36ED002CE4A4 /* model */,
 				F3D0AAE9261C07B2003A661A /* views */,
 				F3D0AAE8261C07A4003A661A /* controllers */,
 				F37F1028261BF021001D47DC /* AppDelegate.swift */,
@@ -86,6 +109,10 @@
 				F37F102C261BF021001D47DC /* ViewController.swift */,
 				F3C70718261D2D32004DDB4E /* OnboardingViewController.swift */,
 				F37F102C261BF021001D47DC /* TOHViewController.swift */,
+				EC17FBEE261CAF80002CE4A4 /* TableViewCell.swift */,
+				EC17FC2C261E020E002CE4A4 /* ChallengeController.swift */,
+				EC17FC37261F0AF3002CE4A4 /* ChallengeView.swift */,
+				EC17FC3F261F5F84002CE4A4 /* ChallengePopupControllerViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -93,11 +120,13 @@
 		F3D0AAE9261C07B2003A661A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				EC17FC30261F0A07002CE4A4 /* ChallengeView.xib */,
 				F37F102E261BF021001D47DC /* Main.storyboard */,
 				F37F1033261BF022001D47DC /* LaunchScreen.storyboard */,
 				FD01FDCB261D501A002C140C /* Success.storyboard */,
 				F32FD834261D65B300B57581 /* Onboarding.storyboard */,
 				87EF82BC261C756A0050DAAF /* TowerOfHanoi.storyboard */,
+				EC17FBE1261CA407002CE4A4 /* Home.storyboard */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -183,6 +212,8 @@
 				F37F1030261BF021001D47DC /* Main.storyboard in Resources */,
 				F32FD835261D65B300B57581 /* Onboarding.storyboard in Resources */,
 				87EF82BD261C756A0050DAAF /* TowerOfHanoi.storyboard in Resources */,
+				EC17FC31261F0A07002CE4A4 /* ChallengeView.xib in Resources */,
+				EC17FBE2261CA407002CE4A4 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +225,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37F102D261BF021001D47DC /* TOHViewController.swift in Sources */,
+				F37F102D261BF021001D47DC /* ViewController.swift in Sources */,
+				EC17FC40261F5F84002CE4A4 /* ChallengePopupControllerViewController.swift in Sources */,
+				EC17FC2D261E020E002CE4A4 /* ChallengeController.swift in Sources */,
+				EC17FBEF261CAF80002CE4A4 /* TableViewCell.swift in Sources */,
+				EC17FC38261F0AF3002CE4A4 /* ChallengeView.swift in Sources */,
+				EC17FBF2261CB0A4002CE4A4 /* Challenge.swift in Sources */,
 				F37F1029261BF021001D47DC /* AppDelegate.swift in Sources */,
 				F37F102B261BF021001D47DC /* SceneDelegate.swift in Sources */,
 				F32FD827261D459C00B57581 /* OnboardingViewController.swift in Sources */,
