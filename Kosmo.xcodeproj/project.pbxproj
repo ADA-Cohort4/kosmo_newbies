@@ -30,6 +30,7 @@
 		F37F1034261BF022001D47DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F37F1036261BF022001D47DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3A36BEF261FD77400361AFB /* v1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = v1.mov; sourceTree = "<group>"; };
+		F3A36C03261FFE0F00361AFB /* BG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG1.png; sourceTree = "<group>"; };
 		F3C70718261D2D32004DDB4E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F3D0AB03261C44F4003A661A /* BG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG1.png; path = ../../../../../Downloads/BG1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +72,7 @@
 				F37F1028261BF021001D47DC /* AppDelegate.swift */,
 				F37F102A261BF021001D47DC /* SceneDelegate.swift */,
 				F37F1031261BF022001D47DC /* Assets.xcassets */,
+				F3A36C03261FFE0F00361AFB /* BG1.png */,
 				F37F1036261BF022001D47DC /* Info.plist */,
 			);
 			path = Kosmo;
