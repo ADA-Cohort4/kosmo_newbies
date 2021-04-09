@@ -13,7 +13,7 @@
             <objects>
                 <viewController title="TowerOfHanoiViewController" id="5v9-PE-UKM" customClass="TOHViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACK-kU-VzT">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4O-ky-huc">
@@ -28,7 +28,7 @@
                                         <barButtonItem key="backBarButtonItem" title="kembali" id="NUz-3l-EHH"/>
                                         <barButtonItem key="leftBarButtonItem" style="done" id="GGh-nf-n3D">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="zkj-Ks-2eY">
-                                                <rect key="frame" x="16" y="11" width="13" height="22"/>
+                                                <rect key="frame" x="16" y="17" width="13" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="chevron.backward" catalog="system"/>
                                             </button>
@@ -129,11 +129,32 @@
             </objects>
             <point key="canvasLocation" x="-115.38461538461539" y="50.473933649289094"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Owa-1n-XRC">
+            <objects>
+                <viewController id="X95-3b-CpP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nBv-mv-fv9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fxP-rY-UGw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="5v9-PE-UKM" kind="showDetail" identifier="gotoChallengePage" id="Iij-Ex-rIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sf-2d-wij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="-107"/>
+        </scene>
     </scenes>
     <resources>
         <image name="KosmoBG" width="3142" height="3127"/>
         <image name="Tower" width="84" height="72"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

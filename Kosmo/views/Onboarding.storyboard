@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-gK-FUb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KosmoBG" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-gK-FUb">
                                         <rect key="frame" x="-43" y="-110" width="470" height="470"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -150,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="1064.6153846153845" y="93.127962085308056"/>
         </scene>
-        <!--Main-->
+        <!--Home-->
         <scene sceneID="vKd-lQ-MaZ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="d7m-Al-XGe" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Home" id="d7m-Al-XGe" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Sif-17-7KJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6K-1n-W4b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -162,7 +162,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="BG1.png" width="3142" height="3127"/>
+        <image name="KosmoBG" width="3142" height="3127"/>
         <image name="bolt" catalog="system" width="101" height="128"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="clock" catalog="system" width="128" height="121"/>
