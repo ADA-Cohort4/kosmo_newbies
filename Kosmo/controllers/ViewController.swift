@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var explainTitle: UILabel!
     @IBOutlet weak var backhomeButton: UIButton!
     @IBOutlet weak var emojiImage: UIImageView!
+    var player = AVPlayer()
+    var playerViewController = AVPlayerViewController()
+    @IBOutlet weak var buttonThumbnail: UIButton!
     var Challenges: [Challenge] = []
     var player = AVPlayer()
     var playerViewController = AVPlayerViewController()
@@ -38,9 +41,8 @@ class ViewController: UIViewController {
         backhomeButton.layer.shadowColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)    
     }
     
-    
     @IBAction func playVideo (_ sender: UIView) {
-        let videoPath = Bundle.main.path(forResource: "example", ofType: "mp4")
+        let videoPath = Bundle.main.path(forResource: "v1", ofType: "mov")
         let videoPathURL = URL(fileURLWithPath: videoPath!)
         player = AVPlayer(url: videoPathURL)
         playerViewController.player = player
