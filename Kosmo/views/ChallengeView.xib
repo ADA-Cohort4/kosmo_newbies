@@ -59,6 +59,9 @@ Selamat mencoba.</string>
                     <state key="normal" title="Mulai">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="handleStart:" destination="-1" eventType="touchUpInside" id="oSJ-rA-PMc"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toh-rule" translatesAutoresizingMaskIntoConstraints="NO" id="87Z-AP-WC9">
                     <rect key="frame" x="20" y="317" width="374" height="100"/>

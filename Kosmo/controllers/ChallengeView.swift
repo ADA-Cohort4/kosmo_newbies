@@ -27,4 +27,9 @@ class ChallengeView: UIView {
         instructionView.frame = self.bounds
     }
     
+    @IBAction func handleStart(_ sender: Any) {
+        print("Hello from the other side")
+    }
+    
+    
 }

@@ -17,7 +17,11 @@ class ChallengeController: UIViewController {
         let backBarBtnItem = UIBarButtonItem()
         backBarBtnItem.title = "something different"
         navigationItem.backBarButtonItem = backBarBtnItem
+        instructionView.handleStart(self)
+        
     }
+    
+    
     
 }
 
