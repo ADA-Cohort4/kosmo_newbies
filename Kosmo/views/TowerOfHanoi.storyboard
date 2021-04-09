@@ -13,7 +13,7 @@
             <objects>
                 <viewController title="TowerOfHanoiViewController" id="5v9-PE-UKM" customClass="TOHViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACK-kU-VzT">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4O-ky-huc">
@@ -28,7 +28,7 @@
                                         <barButtonItem key="backBarButtonItem" title="kembali" id="NUz-3l-EHH"/>
                                         <barButtonItem key="leftBarButtonItem" style="done" id="GGh-nf-n3D">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="zkj-Ks-2eY">
-                                                <rect key="frame" x="16" y="17" width="13" height="22"/>
+                                                <rect key="frame" x="16" y="11" width="13" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="chevron.backward" catalog="system"/>
                                             </button>
@@ -57,6 +57,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-3D-EyS">
                                         <rect key="frame" x="306" y="13" width="24.333333333333332" height="23.666666666666668"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="hms-db-Nvd" kind="presentation" id="Dyp-Gl-Qho"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tower" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-j7-rYz" userLabel="Tower1">
                                         <rect key="frame" x="26" y="174" width="82" height="72"/>
@@ -129,23 +132,35 @@
             </objects>
             <point key="canvasLocation" x="-115.38461538461539" y="50.473933649289094"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Owa-1n-XRC">
+        <!--Challenge Popup Controller View Controller-->
+        <scene sceneID="dBE-YM-FuA">
             <objects>
-                <viewController id="X95-3b-CpP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nBv-mv-fv9">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                <viewController id="hms-db-Nvd" customClass="ChallengePopupControllerViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wG6-5u-bsb">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="fxP-rY-UGw"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waz-fg-nrQ" customClass="ChallengeView" customModule="Kosmo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WPd-br-8Ft"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="waz-fg-nrQ" firstAttribute="top" secondItem="WPd-br-8Ft" secondAttribute="top" id="0el-hY-1Jw"/>
+                            <constraint firstItem="WPd-br-8Ft" firstAttribute="bottom" secondItem="waz-fg-nrQ" secondAttribute="bottom" id="BPG-gP-Q1O"/>
+                            <constraint firstItem="waz-fg-nrQ" firstAttribute="leading" secondItem="WPd-br-8Ft" secondAttribute="leading" id="Pzw-bZ-Xwg"/>
+                            <constraint firstItem="WPd-br-8Ft" firstAttribute="trailing" secondItem="waz-fg-nrQ" secondAttribute="trailing" id="Vm1-sY-Lzs"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <segue destination="5v9-PE-UKM" kind="showDetail" identifier="gotoChallengePage" id="Iij-Ex-rIA"/>
+                        <outlet property="challengePopup" destination="waz-fg-nrQ" id="XMJ-MK-LAL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sf-2d-wij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WR-6S-4py" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802" y="-107"/>
+            <point key="canvasLocation" x="635" y="50"/>
         </scene>
     </scenes>
     <resources>

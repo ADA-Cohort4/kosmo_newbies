@@ -171,41 +171,22 @@
                     <navigationItem key="navigationItem" title="Menara Hanoi" id="U9l-Rs-2VY"/>
                     <connections>
                         <outlet property="instructionView" destination="hO1-Tx-J0m" id="Igl-Oh-qlo"/>
+                        <segue destination="4kn-2N-5jd" kind="show" identifier="goToChallenge" id="cyv-49-wvw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPY-cg-nZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1718.840579710145" y="251.78571428571428"/>
+            <point key="canvasLocation" x="1736" y="252"/>
         </scene>
-        <!--Challenge Popup Controller View Controller-->
-        <scene sceneID="rqf-Nd-5ls">
+        <!--TowerOfHanoi-->
+        <scene sceneID="kTw-Ze-rn1">
             <objects>
-                <viewController id="nvE-bB-WPY" customClass="ChallengePopupControllerViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yRl-nM-6te">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsi-h6-xCd" customClass="ChallengeView" customModule="Kosmo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="7km-0X-wFh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Dsi-h6-xCd" firstAttribute="leading" secondItem="7km-0X-wFh" secondAttribute="leading" id="4fF-as-BxO"/>
-                            <constraint firstItem="Dsi-h6-xCd" firstAttribute="top" secondItem="7km-0X-wFh" secondAttribute="top" id="8mP-dJ-QzL"/>
-                            <constraint firstItem="7km-0X-wFh" firstAttribute="trailing" secondItem="Dsi-h6-xCd" secondAttribute="trailing" id="8pA-De-Igo"/>
-                            <constraint firstItem="7km-0X-wFh" firstAttribute="bottom" secondItem="Dsi-h6-xCd" secondAttribute="bottom" id="E2i-0d-tWa"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="challengePopup" destination="Dsi-h6-xCd" id="N0d-me-e49"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ygW-30-vyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="TowerOfHanoi" id="4kn-2N-5jd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zeb-W5-xkS"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iqb-yd-4hW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2550" y="247"/>
+            <point key="canvasLocation" x="2417" y="252"/>
         </scene>
     </scenes>
     <resources>
