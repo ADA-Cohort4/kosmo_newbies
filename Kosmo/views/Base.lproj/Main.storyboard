@@ -11,6 +11,7 @@
         <!--View Controller-->
         <scene sceneID="7nr-Oa-xbk">
             <objects>
+
                 <viewController id="vE0-9h-Wlk" customClass="ViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jjg-oc-0UV">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
