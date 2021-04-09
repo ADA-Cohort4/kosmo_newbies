@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
@@ -18,6 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
         // test
         
@@ -27,10 +30,21 @@ class ViewController: UIViewController {
         backgroundImage.contentMode = .scaleAspectFill
         view.insertSubview(backgroundImage, at: 0)
         emojiImage.image = #imageLiteral(resourceName: "celebrate")
-        backhomeButton.layer.shadowColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-    
+        backhomeButton.layer.shadowColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)    
     }
-
-
+    var player = AVPlayer()
+    var playerViewController = AVPlayerViewController()
+    @IBOutlet weak var buttonThumbnail: UIButton!
+    
+    @IBAction func playVideo (_ sender: UIView) {
+        let videoPath = Bundle.main.path(forResource: "example", ofType: "mp4")
+        let videoPathURL = URL(fileURLWithPath: videoPath!)
+        player = AVPlayer(url: videoPathURL)
+        playerViewController.player = player
+        
+        self.present(playerViewController, animated: true, completion: {
+            self.playerViewController.player?.play()
+        })
+    }
 }
 
