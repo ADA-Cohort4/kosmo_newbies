@@ -131,13 +131,6 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		F3D0AAEA261C07C2003A661A /* models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = models;
-			sourceTree = "<group>";
-		};
 		F3D0AB02261C44DC003A661A /* assets */ = {
 			isa = PBXGroup;
 			children = (
