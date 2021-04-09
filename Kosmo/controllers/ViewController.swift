@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonThumbnail: UIButton!
     
     @IBAction func playVideo (_ sender: UIView) {
-        let videoPath = Bundle.main.path(forResource: "example", ofType: "mp4")
+        let videoPath = Bundle.main.path(forResource: "v1", ofType: "mov")
         let videoPathURL = URL(fileURLWithPath: videoPath!)
         player = AVPlayer(url: videoPathURL)
         playerViewController.player = player

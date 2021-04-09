@@ -15,8 +15,8 @@
 		F37F1030261BF021001D47DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37F102E261BF021001D47DC /* Main.storyboard */; };
 		F37F1032261BF022001D47DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37F1031261BF022001D47DC /* Assets.xcassets */; };
 		F37F1035261BF022001D47DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37F1033261BF022001D47DC /* LaunchScreen.storyboard */; };
+		F3A36BF0261FD77400361AFB /* v1.mov in Resources */ = {isa = PBXBuildFile; fileRef = F3A36BEF261FD77400361AFB /* v1.mov */; };
 		F3D0AB04261C44F4003A661A /* BG1.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D0AB03261C44F4003A661A /* BG1.png */; };
-		F3F38D9C261F523000AD1548 /* example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F3F38D9B261F523000AD1548 /* example.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		F37F1031261BF022001D47DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F37F1034261BF022001D47DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F37F1036261BF022001D47DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A36BEF261FD77400361AFB /* v1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = v1.mov; sourceTree = "<group>"; };
 		F3C70718261D2D32004DDB4E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F3D0AB03261C44F4003A661A /* BG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BG1.png; path = ../../../../../Downloads/BG1.png; sourceTree = "<group>"; };
-		F3F38D9B261F523000AD1548 /* example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 		F3D0AB02261C44DC003A661A /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				F3F38D9B261F523000AD1548 /* example.mp4 */,
+				F3A36BEF261FD77400361AFB /* v1.mov */,
 				F3D0AB03261C44F4003A661A /* BG1.png */,
 			);
 			path = assets;
@@ -168,11 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F38D9C261F523000AD1548 /* example.mp4 in Resources */,
 				F37F1035261BF022001D47DC /* LaunchScreen.storyboard in Resources */,
 				F3D0AB04261C44F4003A661A /* BG1.png in Resources */,
 				F37F1032261BF022001D47DC /* Assets.xcassets in Resources */,
 				F37F1030261BF021001D47DC /* Main.storyboard in Resources */,
+				F3A36BF0261FD77400361AFB /* v1.mov in Resources */,
 				F32FD835261D65B300B57581 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
