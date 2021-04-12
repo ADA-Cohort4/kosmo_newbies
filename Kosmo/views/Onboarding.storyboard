@@ -37,7 +37,6 @@
                                 </state>
                                 <connections>
                                     <action selector="startButton:" destination="0fF-0F-HTl" eventType="touchDown" id="yBS-4I-4YH"/>
-                                    <segue destination="d7m-Al-XGe" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5W2-mr-p5R"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-Qb-a6c">
@@ -144,6 +143,7 @@
                         <outlet property="icon2" destination="uMG-EK-D1L" id="GFI-VJ-npo"/>
                         <outlet property="icon3" destination="dlN-2j-Kku" id="D4v-5f-PWP"/>
                         <outlet property="startLearning" destination="kLA-Rz-NZ6" id="HF5-X9-dFA"/>
+                        <segue destination="d7m-Al-XGe" kind="presentation" identifier="goToMainPage" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zgh-sA-dEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4T-vt-Lnv" sceneMemberID="firstResponder"/>

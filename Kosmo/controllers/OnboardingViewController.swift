@@ -14,9 +14,11 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var startLearning: UIButton!
     @IBOutlet weak var icon2: UIView!
     @IBOutlet weak var icon3: UIView!
-    
+    //      userDefault
+    let defaults = UserDefaults.standard
     @IBAction func startButton(_ sender: UIButton) {
-        print("Hello")
+        performSegue(withIdentifier: "goToMainPage", sender: nil)
+        defaults.setValue(true, forKey: "isSignin")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +36,14 @@ class OnboardingViewController: UIViewController {
         icon3.layer.borderWidth = 5
 //      button style
         startLearning.layer.cornerRadius = 10
-//      userDefault
-        let defaults = UserDefaults.standard
-        defaults.setValue(true, forKey: "newUser")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//      redirect
+        let isSignin = defaults.bool(forKey: "isSignin")
+        if (isSignin == true) {
+            performSegue(withIdentifier: "goToMainPage", sender: nil)
+        }
     }
     
 
