@@ -18,6 +18,8 @@ class ChallengeView: UIView {
     */
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var instructionView: UIView!
+    var challengeControllerDelegate: ChallengeControllerDelegate?
+    
     
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,6 +30,7 @@ class ChallengeView: UIView {
     }
     
     @IBAction func handleStart(_ sender: Any) {
+        challengeControllerDelegate?.startChallengeDidTab()
         print("Hello from the other side")
     }
     
