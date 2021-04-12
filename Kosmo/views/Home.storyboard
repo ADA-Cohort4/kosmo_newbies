@@ -22,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9g-KH-KGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="323" y="252"/>
+            <point key="canvasLocation" x="178" y="252"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S2G-XB-sfM">
@@ -59,12 +59,6 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SJ-3d-ocz">
                                                     <rect key="frame" x="12" y="8" width="366" height="85"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ikd-Qp-iSU">
-                                                            <rect key="frame" x="22" y="29" width="30" height="27"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="30" id="dVI-kL-YeY"/>
-                                                            </constraints>
-                                                        </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Py1-tw-Uq8">
                                                             <rect key="frame" x="334.66666666666669" y="20.666666666666671" width="15.333333333333314" height="44"/>
                                                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -73,26 +67,33 @@
                                                                 <constraint firstAttribute="height" constant="44" id="nS2-St-4iU"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Go to Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opD-Ka-z5W">
-                                                            <rect key="frame" x="71" y="32" width="222" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Challenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opD-Ka-z5W">
+                                                            <rect key="frame" x="54.999999999999986" y="32" width="229.66666666666663" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ikd-Qp-iSU">
+                                                            <rect key="frame" x="15" y="25" width="34" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="Uoq-91-tcm"/>
+                                                                <constraint firstAttribute="width" constant="34" id="yLQ-LU-857"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.21886354932189828" green="0.21046411263775894" blue="0.31159905704111668" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="Ikd-Qp-iSU" firstAttribute="centerY" secondItem="1SJ-3d-ocz" secondAttribute="centerY" id="0cT-dW-PIF"/>
-                                                        <constraint firstItem="Ikd-Qp-iSU" firstAttribute="leading" secondItem="1SJ-3d-ocz" secondAttribute="leading" constant="20" id="Cma-LY-QdS"/>
-                                                        <constraint firstItem="Py1-tw-Uq8" firstAttribute="centerY" secondItem="Ikd-Qp-iSU" secondAttribute="centerY" id="K7Q-nX-48X"/>
+                                                        <constraint firstItem="Ikd-Qp-iSU" firstAttribute="top" secondItem="1SJ-3d-ocz" secondAttribute="top" constant="25" id="8vg-rl-qGY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ikd-Qp-iSU" secondAttribute="bottom" constant="25" id="Fa5-3p-0bn"/>
                                                         <constraint firstAttribute="height" constant="65" id="Kxg-br-RCD"/>
                                                         <constraint firstAttribute="trailing" secondItem="Py1-tw-Uq8" secondAttribute="trailing" constant="16" id="LaI-xn-Qya"/>
-                                                        <constraint firstItem="Py1-tw-Uq8" firstAttribute="leading" secondItem="opD-Ka-z5W" secondAttribute="trailing" constant="65.5" id="Pkq-p8-8ea"/>
+                                                        <constraint firstItem="Py1-tw-Uq8" firstAttribute="leading" secondItem="opD-Ka-z5W" secondAttribute="trailing" constant="50" id="Pkq-p8-8ea"/>
                                                         <constraint firstItem="opD-Ka-z5W" firstAttribute="centerY" secondItem="1SJ-3d-ocz" secondAttribute="centerY" id="dmk-wM-uyK"/>
-                                                        <constraint firstItem="opD-Ka-z5W" firstAttribute="leading" secondItem="1SJ-3d-ocz" secondAttribute="leading" constant="50" id="fhO-3s-gWR"/>
+                                                        <constraint firstItem="opD-Ka-z5W" firstAttribute="leading" secondItem="1SJ-3d-ocz" secondAttribute="leading" constant="55" id="fhO-3s-gWR"/>
+                                                        <constraint firstItem="Ikd-Qp-iSU" firstAttribute="leading" secondItem="1SJ-3d-ocz" secondAttribute="leading" constant="15" id="gWQ-0b-8ak"/>
                                                         <constraint firstItem="opD-Ka-z5W" firstAttribute="centerY" secondItem="1SJ-3d-ocz" secondAttribute="centerY" id="iAv-Tc-6sk"/>
                                                         <constraint firstItem="Py1-tw-Uq8" firstAttribute="centerY" secondItem="1SJ-3d-ocz" secondAttribute="centerY" id="iV9-FG-2R1"/>
-                                                        <constraint firstItem="Ikd-Qp-iSU" firstAttribute="top" secondItem="1SJ-3d-ocz" secondAttribute="top" constant="29" id="yas-W0-J9L"/>
+                                                        <constraint firstAttribute="width" constant="366" id="oGr-V0-KyW"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -178,7 +179,7 @@
                     <navigationItem key="navigationItem" title="Menara Hanoi" id="U9l-Rs-2VY"/>
                     <connections>
                         <outlet property="instructionView" destination="hO1-Tx-J0m" id="Igl-Oh-qlo"/>
-                        <segue destination="4kn-2N-5jd" kind="show" identifier="goToChallenge" id="cyv-49-wvw"/>
+                        <segue destination="KXH-2G-7Cj" kind="show" identifier="goToChallenge" id="fK7-Lz-c93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPY-cg-nZY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -186,34 +187,14 @@
             <point key="canvasLocation" x="1736" y="252"/>
         </scene>
         <!--TowerOfHanoi-->
-        <scene sceneID="kTw-Ze-rn1">
+        <scene sceneID="gk6-7A-Kg6">
             <objects>
-                <viewController id="nvE-bB-WPY" customClass="ChallengePopupControllerViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yRl-nM-6te">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dsi-h6-xCd" customClass="ChallengeView" customModule="Kosmo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="7km-0X-wFh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Dsi-h6-xCd" firstAttribute="leading" secondItem="7km-0X-wFh" secondAttribute="leading" id="4fF-as-BxO"/>
-                            <constraint firstItem="Dsi-h6-xCd" firstAttribute="top" secondItem="7km-0X-wFh" secondAttribute="top" id="8mP-dJ-QzL"/>
-                            <constraint firstItem="7km-0X-wFh" firstAttribute="trailing" secondItem="Dsi-h6-xCd" secondAttribute="trailing" id="8pA-De-Igo"/>
-                            <constraint firstItem="7km-0X-wFh" firstAttribute="bottom" secondItem="Dsi-h6-xCd" secondAttribute="bottom" id="E2i-0d-tWa"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="challengePopup" destination="Dsi-h6-xCd" id="N0d-me-e49"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ygW-30-vyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="TowerOfHanoi" id="KXH-2G-7Cj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8Ol-dO-n5S"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rh6-8o-3s1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2417" y="252"/>
+            <point key="canvasLocation" x="2437" y="252"/>
         </scene>
     </scenes>
     <resources>
