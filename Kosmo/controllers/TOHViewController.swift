@@ -116,9 +116,25 @@ class TOHViewController: UIViewController {
 
                 Disk2.center = CGPoint(x: initialCenter.x + translation.x,
                                               y: initialCenter.y + translation.y)
-//            case .ended,
-//                 .cancelled:
-//
+            case .ended,
+                 .cancelled:
+                if ((self.Disk2.frame.midX >= self.view.layer.frame.width / 3) && (Disk2.center.x < 220)){
+                    UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                            self.Disk1.center.x = 171
+                    }, completion: nil)
+                } else if Disk2.center.x >= 220 {
+                    UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                            self.Disk1.center.x = 279
+                    }, completion: nil)
+                } else if Disk2.center.x < 120{
+                    UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                            self.Disk2.center.x = 67
+                    }, completion: nil)
+                } else {
+                    UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: [.curveEaseInOut]) {
+                            self.Disk2.center = self.initialCenter
+                    }
+                }
             default:
                 break
             }
