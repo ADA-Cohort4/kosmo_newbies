@@ -100,6 +100,30 @@
                                             <outletCollection property="gestureRecognizers" destination="7Da-jC-3bH" appends="YES" id="Ftn-4t-KVx"/>
                                         </connections>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSf-8s-E3u">
+                                        <rect key="frame" x="26" y="132" width="82" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" "/>
+                                        <connections>
+                                            <action selector="btn1:" destination="5v9-PE-UKM" eventType="touchDown" id="hE7-er-d5D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgW-YQ-ZD0">
+                                        <rect key="frame" x="131" y="138" width="82" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" "/>
+                                        <connections>
+                                            <action selector="btn2:" destination="5v9-PE-UKM" eventType="touchDown" id="UoZ-Zh-08y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lh-ua-LOu">
+                                        <rect key="frame" x="238" y="138" width="82" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" "/>
+                                        <connections>
+                                            <action selector="btn3:" destination="5v9-PE-UKM" eventType="touchDown" id="hOm-C1-uMQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -123,6 +147,9 @@
                         <outlet property="Tower1" destination="9wk-j7-rYz" id="Lxf-KL-eby"/>
                         <outlet property="Tower2" destination="mUR-ZX-gms" id="BdS-cf-Pgm"/>
                         <outlet property="Tower3" destination="Mp8-Ld-Qgx" id="2vp-Ej-cZg"/>
+                        <outlet property="btnStack1" destination="rSf-8s-E3u" id="vgo-32-cYn"/>
+                        <outlet property="btnStack2" destination="EgW-YQ-ZD0" id="dax-0m-pBc"/>
+                        <outlet property="btnStack3" destination="2Lh-ua-LOu" id="daq-hX-RPq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5M-VM-4Xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
