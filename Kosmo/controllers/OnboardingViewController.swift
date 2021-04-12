@@ -34,7 +34,9 @@ class OnboardingViewController: UIViewController {
         icon3.layer.borderWidth = 5
 //      button style
         startLearning.layer.cornerRadius = 10
-        
+//      userDefault
+        let defaults = UserDefaults.standard
+        defaults.setValue(true, forKey: "newUser")
     }
     
 
