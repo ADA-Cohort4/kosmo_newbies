@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     var playerViewController = AVPlayerViewController()
     @IBOutlet weak var buttonThumbnail: UIButton!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var thumbnail: UIButton!
+    @IBOutlet weak var thumbVideo: UIImageView!
+    @IBOutlet weak var navHeader: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,21 @@ class ViewController: UIViewController {
         let backBarBtnItem = UIBarButtonItem()
         backBarBtnItem.title = "Sequence"
         navigationItem.backBarButtonItem = backBarBtnItem
+//      aji code
+        thumbVideo.layer.shadowColor = UIColor.darkGray.cgColor
+        thumbVideo.layer.shadowOpacity = 0.2
+        thumbVideo.layer.shadowOffset = .zero
+    }
+    
+//      hide navbar in hompage
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        super.viewWillAppear(animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
     }
     
     @IBAction func playVideo (_ sender: UIView) {

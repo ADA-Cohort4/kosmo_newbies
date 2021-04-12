@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KosmoBG" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-gK-FUb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG1" translatesAutoresizingMaskIntoConstraints="NO" id="gZf-gK-FUb">
                                         <rect key="frame" x="-43" y="-110" width="470" height="470"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -37,7 +37,6 @@
                                 </state>
                                 <connections>
                                     <action selector="startButton:" destination="0fF-0F-HTl" eventType="touchDown" id="yBS-4I-4YH"/>
-                                    <segue destination="d7m-Al-XGe" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="5W2-mr-p5R"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-Qb-a6c">
@@ -144,6 +143,7 @@
                         <outlet property="icon2" destination="uMG-EK-D1L" id="GFI-VJ-npo"/>
                         <outlet property="icon3" destination="dlN-2j-Kku" id="D4v-5f-PWP"/>
                         <outlet property="startLearning" destination="kLA-Rz-NZ6" id="HF5-X9-dFA"/>
+                        <segue destination="d7m-Al-XGe" kind="presentation" identifier="goToMainPage" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zgh-sA-dEc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H4T-vt-Lnv" sceneMemberID="firstResponder"/>
@@ -162,7 +162,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KosmoBG" width="3142" height="3127"/>
+        <image name="BG1" width="3142" height="3127"/>
         <image name="bolt" catalog="system" width="101" height="128"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
         <image name="clock" catalog="system" width="128" height="121"/>
