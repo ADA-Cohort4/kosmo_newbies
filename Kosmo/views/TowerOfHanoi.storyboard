@@ -26,7 +26,7 @@
                                 <items>
                                     <navigationItem title="Menara Hanoi" id="PqT-Rq-YRg">
                                         <barButtonItem key="backBarButtonItem" title="kembali" id="NUz-3l-EHH"/>
-                                        <barButtonItem key="leftBarButtonItem" style="done" id="GGh-nf-n3D">
+                                        <barButtonItem key="leftBarButtonItem" title="   " style="done" id="GGh-nf-n3D">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="zkj-Ks-2eY">
                                                 <rect key="frame" x="16" y="11" width="13" height="22"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -223,6 +223,7 @@
             <point key="canvasLocation" x="1015" y="-301"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.45040619370000001" green="0.51162773370000003" blue="0.84710043670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="KosmoBG" width="3142" height="3127"/>
         <image name="Tower" width="84" height="72"/>
