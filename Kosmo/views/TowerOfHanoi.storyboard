@@ -49,6 +49,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="5v9-PE-UKM" eventType="touchUpInside" id="CTP-sM-qnM"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljC-7j-UgL">
                                 <rect key="frame" x="23" y="212" width="344" height="420"/>
@@ -150,6 +153,7 @@
                         <outlet property="btnStack1" destination="rSf-8s-E3u" id="vgo-32-cYn"/>
                         <outlet property="btnStack2" destination="EgW-YQ-ZD0" id="dax-0m-pBc"/>
                         <outlet property="btnStack3" destination="2Lh-ua-LOu" id="daq-hX-RPq"/>
+                        <segue destination="Jhu-eC-4zv" kind="presentation" identifier="goToSuccess" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="t1K-Zn-b3g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5M-VM-4Xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -158,6 +162,14 @@
                 <panGestureRecognizer minimumNumberOfTouches="1" id="UJ9-g8-qoL" userLabel="PanDisk3"/>
             </objects>
             <point key="canvasLocation" x="-115.38461538461539" y="50.473933649289094"/>
+        </scene>
+        <!--Success-->
+        <scene sceneID="Gd7-e4-mHU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Success" id="Jhu-eC-4zv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9b-ds-GAK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832" y="251"/>
         </scene>
         <!--Challenge Popup Controller View Controller-->
         <scene sceneID="dBE-YM-FuA">
@@ -187,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WR-6S-4py" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="635" y="50"/>
+            <point key="canvasLocation" x="1035" y="-568"/>
         </scene>
     </scenes>
     <resources>

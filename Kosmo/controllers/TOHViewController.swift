@@ -31,11 +31,7 @@ class TOHViewController: UIViewController {
     
     private var initialCenter: CGPoint = .zero
     
-    var disks = [
-        [2,1,0],
-        [],
-        []
-    ]
+    var disks = [[2,1,0],[],[]]
     var lastPos: CGPoint = .zero
     var prevStack: Int = 0
     var nextStack: Int = 0
@@ -77,9 +73,9 @@ class TOHViewController: UIViewController {
 //        Disk1.center = view.center
         
         // Initialize Swipe Gesture Recognizer
-        let panGestureRecognizer1 = UIPanGestureRecognizer(target: self, action: #selector(didPan1(_:)))
-        let panGestureRecognizer2 = UIPanGestureRecognizer(target: self, action: #selector(didPan1(_:)))
-        let panGestureRecognizer3 = UIPanGestureRecognizer(target: self, action: #selector(didPan1(_:)))
+        let panGestureRecognizer1 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
+        let panGestureRecognizer2 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
+        let panGestureRecognizer3 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         
         // Add Swipe Gesture Recognizer
 //        pannableView.addGestureRecognizer(panGestureRecognizer)
@@ -103,6 +99,13 @@ class TOHViewController: UIViewController {
         setDiskAndStack(arr, 2)
     }
     
+    @IBAction func checkAnswer (_ sender: UIButton) {
+        let endStack = self.disks[2]
+        let answer = [2,1,0]
+        if (endStack == answer) {
+            performSegue(withIdentifier: "goToSuccess", sender: nil)
+        }
+    }
     
     func setDiskAndStack (_ arr: [Int], _ stack: Int) {
         if (arr.count > 0) {
@@ -120,8 +123,32 @@ class TOHViewController: UIViewController {
         }
     }
     
+    func moveDisk (_ stack: Int, _ stackUIPosition: CGFloat) {
+        let middleStack = self.disks[stack]
+        let middleStackLength = self.disks[stack].count
+        if ( middleStackLength == 0) {
+            self.disks[stack].append(self.diskNumber)
+            self.WhichDisk.center.x = stackUIPosition
+            self.WhichDisk.center.y = 235
+        } else {
+            if (middleStack[middleStackLength - 1] > self.diskNumber) {
+                if (middleStackLength == 1) {
+                    self.WhichDisk.center.y = 220
+                } else if (middleStackLength == 2) {
+                    self.WhichDisk.center.y = 205
+                }
+                self.WhichDisk.center.x = stackUIPosition
+                self.disks[stack].append(self.diskNumber)
+            } else {
+                self.WhichDisk.center = self.lastPos
+                self.disks[self.prevStack].append(self.diskNumber)
+            }
+        }
+        print(self.disks)
+    }
     
-    @objc private func didPan1(_ sender: UIPanGestureRecognizer) {
+    
+    @objc private func didPan(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
             case .began:
                 initialCenter = WhichDisk.center
@@ -136,78 +163,15 @@ class TOHViewController: UIViewController {
                  .cancelled:
                 if ((self.WhichDisk.frame.midX >= self.view.layer.frame.width / 3) && (WhichDisk.center.x < 220)){
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                        
-                        let middleStack = self.disks[1]
-                        let middleStackLength = self.disks[1].count
-                        if ( middleStackLength == 0) {
-                            self.disks[1].append(self.diskNumber)
-                            self.WhichDisk.center.x = 171
-                            self.WhichDisk.center.y = 235
-                        } else {
-                            if (middleStack[middleStackLength - 1] > self.diskNumber) {
-                                if (middleStackLength == 1) {
-                                    self.WhichDisk.center.y = 220
-                                } else if (middleStackLength == 2) {
-                                    self.WhichDisk.center.y = 205
-                                }
-                                self.WhichDisk.center.x = 171
-                                self.disks[1].append(self.diskNumber)
-                            } else {
-                                self.WhichDisk.center = self.lastPos
-                                self.disks[self.prevStack].append(self.diskNumber)
-                            }
-                        }
-                        print(self.disks)
+                        self.moveDisk(1, 171)
                     }, completion: nil)
                 } else if WhichDisk.center.x >= 220 {
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                        let endStack = self.disks[2]
-                        let endStackLength = self.disks[2].count
-//                        let firstStackLength = self.disks[0].count
-                        if ( endStackLength == 0) {
-                            self.disks[2].append(self.diskNumber)
-                            self.WhichDisk.center.x = 279
-                            self.WhichDisk.center.y = 235
-                        } else {
-                            if (endStack[endStackLength - 1] > self.diskNumber) {
-                                if (endStackLength == 1) {
-                                    self.WhichDisk.center.y = 220
-                                } else if (endStackLength == 2) {
-                                    self.WhichDisk.center.y = 205
-                                }
-                                self.WhichDisk.center.x = 279
-                                self.disks[2].append(self.diskNumber)
-                            } else {
-                                self.WhichDisk.center = self.lastPos
-                                self.disks[self.prevStack].append(self.diskNumber)
-                            }
-                        }
-                        print(self.disks)
+                        self.moveDisk(2, 279)
                     }, completion: nil)
                 } else if WhichDisk.center.x < 120{
                     UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                            self.WhichDisk.center.x = 67
-                        let firstStack = self.disks[0]
-                        let firstStackLength = self.disks[0].count
-                        if ( firstStackLength == 0) {
-                            self.disks[0].append(self.diskNumber)
-                            self.WhichDisk.center.x = 67
-                            self.WhichDisk.center.y = 235
-                        } else {
-                            if (firstStack[firstStackLength - 1] > self.diskNumber) {
-                                if (firstStackLength == 1) {
-                                    self.WhichDisk.center.y = 220
-                                } else if (firstStackLength == 2) {
-                                    self.WhichDisk.center.y = 205
-                                }
-                                self.WhichDisk.center.x = 67
-                                self.disks[0].append(self.diskNumber)
-                            } else {
-                                self.WhichDisk.center = self.lastPos
-                                self.disks[self.prevStack].append(self.diskNumber)
-                            }
-                        }
-                        print(self.disks)
+                        self.moveDisk(0, 67)
                     }, completion: nil)
                 } else {
                     UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: [.curveEaseInOut]) {

@@ -32,6 +32,9 @@ tentang Sequence yaitu urutan yang dijalankan di dalam algoritma</string>
                                 <state key="normal" title="Kembali ke Beranda">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fPp-H5-bB9" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="oCh-Mx-5CH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELAMAT!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOr-qf-R2u">
                                 <rect key="frame" x="143" y="281" width="128" height="32"/>
@@ -68,6 +71,14 @@ tentang Sequence yaitu urutan yang dijalankan di dalam algoritma</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4TG-0o-ahX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-171.01449275362319" y="23.4375"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="NJM-hO-8Yf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="fPp-H5-bB9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbW-bJ-jzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="23"/>
         </scene>
     </scenes>
     <resources>
