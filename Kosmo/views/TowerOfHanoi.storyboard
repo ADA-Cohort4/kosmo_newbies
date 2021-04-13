@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TowerOfHanoiViewController-->
+        <!--Menara Hanoi-->
         <scene sceneID="llB-If-cez">
             <objects>
-                <viewController title="TowerOfHanoiViewController" id="5v9-PE-UKM" customClass="TOHViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Menara Hanoi" id="5v9-PE-UKM" customClass="TOHViewController" customModule="Kosmo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACK-kU-VzT">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WR-6S-4py" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1035" y="-568"/>
+            <point key="canvasLocation" x="1015" y="-301"/>
         </scene>
     </scenes>
     <resources>
