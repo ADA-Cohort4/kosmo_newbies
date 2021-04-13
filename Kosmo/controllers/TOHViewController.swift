@@ -107,8 +107,8 @@ class TOHViewController: UIViewController {
         } else {
             let generator = UINotificationFeedbackGenerator()
             generator.notificationOccurred(.error)
-            let alert = UIAlertController(title: "jawaban salah!", message: "Baca lagi instruksi penyelesaian tantangan", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "tutup", style: UIAlertAction.Style.default, handler: nil))
+            let alert = UIAlertController(title: "Jawaban Salah!", message: "Baca lagi instruksi penyelesaian tantangan", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Tutup", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
