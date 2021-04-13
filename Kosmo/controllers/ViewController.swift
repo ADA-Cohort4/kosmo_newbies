@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     func createArray() -> [Challenge] {
         var challenges: [Challenge] = []
-        let challenge1 = Challenge(title: "Tower of Hanoi", image: (UIImage(named: "building")!), isDone: true, isChallengeEnable: true)
+        let challenge1 = Challenge(title: "Menara Hanoi", image: (UIImage(named: "building")!), isDone: true, isChallengeEnable: true)
         let challenge2 = Challenge(title: "Tukar Gelas", image: UIImage(named: "hourglass")!, isDone: false, isChallengeEnable: false)
         let challenge3 = Challenge(title: "Masak Telor", image: UIImage(named: "flame")!, isDone: false, isChallengeEnable: false)
         

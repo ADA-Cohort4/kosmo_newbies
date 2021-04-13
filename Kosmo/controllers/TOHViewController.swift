@@ -104,6 +104,12 @@ class TOHViewController: UIViewController {
         let answer = [2,1,0]
         if (endStack == answer) {
             performSegue(withIdentifier: "goToSuccess", sender: nil)
+        } else {
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.error)
+            let alert = UIAlertController(title: "jawaban salah!", message: "Baca lagi instruksi penyelesaian tantangan", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "tutup", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -140,6 +146,8 @@ class TOHViewController: UIViewController {
                 self.WhichDisk.center.x = stackUIPosition
                 self.disks[stack].append(self.diskNumber)
             } else {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
                 self.WhichDisk.center = self.lastPos
                 self.disks[self.prevStack].append(self.diskNumber)
             }
