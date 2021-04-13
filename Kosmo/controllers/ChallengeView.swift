@@ -27,6 +27,7 @@ class ChallengeView: UIView {
         Bundle.main.loadNibNamed("ChallengeView", owner: self, options: nil)
         addSubview(instructionView)
         instructionView.frame = self.bounds
+        startButton.layer.cornerRadius = 10
     }
     
     @IBAction func handleStart(_ sender: Any) {

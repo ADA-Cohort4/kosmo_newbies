@@ -38,7 +38,7 @@ Tapi ketika kamu memindahkan disk-disk tersebut kamu tidak boleh menempatkan dis
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crz-nb-Zaf">
-                    <rect key="frame" x="20" y="487" width="350" height="100"/>
+                    <rect key="frame" x="20" y="507" width="350" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="wBB-B6-08c"/>
                     </constraints>
@@ -50,7 +50,7 @@ Selamat mencoba.</string>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvr-AN-Xz8">
-                    <rect key="frame" x="20" y="627" width="350" height="56"/>
+                    <rect key="frame" x="20" y="647" width="350" height="56"/>
                     <color key="backgroundColor" red="0.21886354929999999" green="0.2104641126" blue="0.31159905700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="56" id="zZ3-6u-SVi"/>
@@ -76,11 +76,11 @@ Selamat mencoba.</string>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T7m-Ze-wpt" secondAttribute="trailing" constant="20" id="263-VI-jrV"/>
                 <constraint firstItem="Q6p-qH-XlA" firstAttribute="top" secondItem="T7m-Ze-wpt" secondAttribute="bottom" constant="20" id="2Dg-Jf-OYz"/>
                 <constraint firstItem="T7m-Ze-wpt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="7Ta-AV-3LD"/>
-                <constraint firstItem="87Z-AP-WC9" firstAttribute="top" secondItem="Q6p-qH-XlA" secondAttribute="bottom" constant="25" id="8gS-Vt-H8Z"/>
-                <constraint firstItem="Crz-nb-Zaf" firstAttribute="top" secondItem="87Z-AP-WC9" secondAttribute="bottom" constant="25" id="BKA-2y-2cT"/>
+                <constraint firstItem="87Z-AP-WC9" firstAttribute="top" secondItem="Q6p-qH-XlA" secondAttribute="bottom" constant="35" id="8gS-Vt-H8Z"/>
+                <constraint firstItem="Crz-nb-Zaf" firstAttribute="top" secondItem="87Z-AP-WC9" secondAttribute="bottom" constant="35" id="BKA-2y-2cT"/>
                 <constraint firstItem="T7m-Ze-wpt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="CST-2K-lHR"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Crz-nb-Zaf" secondAttribute="trailing" constant="20" id="EAx-eI-Kqr"/>
-                <constraint firstItem="87Z-AP-WC9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="KA6-yF-xLL"/>
+                <constraint firstItem="87Z-AP-WC9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="KA6-yF-xLL"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Q6p-qH-XlA" secondAttribute="trailing" constant="20" id="ZnA-fB-yCU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="87Z-AP-WC9" secondAttribute="trailing" constant="20" id="c4h-FI-l2e"/>
                 <constraint firstItem="Q6p-qH-XlA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="c7U-Vn-UTq"/>
