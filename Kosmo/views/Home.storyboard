@@ -197,6 +197,7 @@
             <point key="canvasLocation" x="2437" y="252"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.24762779469999999" green="0.23767799140000001" blue="0.33726906779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="BG1" width="3142" height="3127"/>
         <image name="thumb3" width="1280" height="720"/>

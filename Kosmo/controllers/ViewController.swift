@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         Challenges  = createArray()
         let backBarBtnItem = UIBarButtonItem()
-        backBarBtnItem.title = "Sequence"
+        backBarBtnItem.title = " "
         navigationItem.backBarButtonItem = backBarBtnItem
 //      aji code
         thumbVideo.layer.shadowColor = UIColor.darkGray.cgColor

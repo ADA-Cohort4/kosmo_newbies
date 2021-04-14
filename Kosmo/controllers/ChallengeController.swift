@@ -16,7 +16,7 @@ class ChallengeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let backBarBtnItem = UIBarButtonItem()
-        backBarBtnItem.title = "Sequence"
+        backBarBtnItem.title = " "
         navigationItem.backBarButtonItem = backBarBtnItem
         instructionView.challengeControllerDelegate = self
         
