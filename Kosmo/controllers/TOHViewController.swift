@@ -27,6 +27,7 @@ class TOHViewController: UIViewController {
     @IBOutlet weak var btnStack1: UIButton!
     @IBOutlet weak var btnStack2: UIButton!
     @IBOutlet weak var btnStack3: UIButton!
+    @IBOutlet weak var goalMark: UIView!
     
     
     private var initialCenter: CGPoint = .zero
@@ -64,13 +65,6 @@ class TOHViewController: UIViewController {
         Disk2.translatesAutoresizingMaskIntoConstraints = false
         Disk3.translatesAutoresizingMaskIntoConstraints = false
         
-        // Add to View Hierarchy
-//        view.addSubview(pannableView)
-//        view.addSubview(Disk1)
-
-        // Center Pannable View
-//        pannableView.center = view.center
-//        Disk1.center = view.center
         
         // Initialize Swipe Gesture Recognizer
         let panGestureRecognizer1 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
@@ -78,10 +72,12 @@ class TOHViewController: UIViewController {
         let panGestureRecognizer3 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         
         // Add Swipe Gesture Recognizer
-//        pannableView.addGestureRecognizer(panGestureRecognizer)
+        // pannableView.addGestureRecognizer(panGestureRecognizer)
         btnStack1.addGestureRecognizer(panGestureRecognizer1)
         btnStack2.addGestureRecognizer(panGestureRecognizer2)
         btnStack3.addGestureRecognizer(panGestureRecognizer3)
+        // goal Mark
+        goalMark.layer.cornerRadius = 8
     }
     
     @IBAction func btn1 (_ sender: UIButton) {

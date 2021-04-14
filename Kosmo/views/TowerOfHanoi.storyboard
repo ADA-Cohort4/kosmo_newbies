@@ -57,6 +57,11 @@
                                 <rect key="frame" x="23" y="212" width="344" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GXA-Us-bf0">
+                                        <rect key="frame" x="233" y="132" width="91" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.7038762569" green="0.52211177350000004" blue="0.92160695790000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-3D-EyS">
                                         <rect key="frame" x="306" y="13" width="24.333333333333332" height="23.666666666666668"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -174,6 +179,7 @@
                         <outlet property="btnStack1" destination="rSf-8s-E3u" id="vgo-32-cYn"/>
                         <outlet property="btnStack2" destination="EgW-YQ-ZD0" id="dax-0m-pBc"/>
                         <outlet property="btnStack3" destination="2Lh-ua-LOu" id="daq-hX-RPq"/>
+                        <outlet property="goalMark" destination="GXA-Us-bf0" id="FtT-4N-0DI"/>
                         <segue destination="Jhu-eC-4zv" kind="presentation" identifier="goToSuccess" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="t1K-Zn-b3g"/>
                     </connections>
                 </viewController>
