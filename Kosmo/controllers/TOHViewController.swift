@@ -38,6 +38,7 @@ class TOHViewController: UIViewController {
     var nextStack: Int = 0
     var diskNumber: Int = 0
     var WhichDisk: UIView!
+    var isOn: Bool = false
     
     private let pannableView: UIView = {
         // Initialize View
@@ -66,12 +67,12 @@ class TOHViewController: UIViewController {
         Disk3.translatesAutoresizingMaskIntoConstraints = false
         
         
-        // Initialize Swipe Gesture Recognizer
+        // Initialize pan Gesture Recognizer
         let panGestureRecognizer1 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         let panGestureRecognizer2 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         let panGestureRecognizer3 = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         
-        // Add Swipe Gesture Recognizer
+        // Add pan Gesture Recognizer
         // pannableView.addGestureRecognizer(panGestureRecognizer)
         btnStack1.addGestureRecognizer(panGestureRecognizer1)
         btnStack2.addGestureRecognizer(panGestureRecognizer2)
@@ -128,6 +129,7 @@ class TOHViewController: UIViewController {
     func setDiskAndStack (_ arr: [Int], _ stack: Int) {
         if (arr.count > 0) {
             self.prevStack = stack
+            self.isOn = true
             if (arr[arr.count - 1] == 0) {
                 self.WhichDisk = self.Disk1
                 self.diskNumber = 0
@@ -169,38 +171,41 @@ class TOHViewController: UIViewController {
     
     
     @objc private func didPan(_ sender: UIPanGestureRecognizer) {
-        switch sender.state {
-            case .began:
-                initialCenter = WhichDisk.center
-                lastPos = WhichDisk.center
-                let new = self.disks[self.prevStack].popLast()
-                print(new ?? "Disk Error")
-            case .changed:
-                let translation = sender.translation(in: view)
-                WhichDisk.center = CGPoint(x: initialCenter.x + translation.x,
-                                              y: initialCenter.y + translation.y)
-            case .ended,
-                 .cancelled:
-                if ((self.WhichDisk.frame.midX >= self.view.layer.frame.width / 3) && (WhichDisk.center.x < 220)){
-                    UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                        self.moveDisk(1, 171)
-                    }, completion: nil)
-                } else if WhichDisk.center.x >= 220 {
-                    UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                        self.moveDisk(2, 279)
-                    }, completion: nil)
-                } else if WhichDisk.center.x < 120{
-                    UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-                        self.moveDisk(0, 67)
-                    }, completion: nil)
-                } else {
-                    UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: [.curveEaseInOut]) {
-                            self.WhichDisk.center = self.initialCenter
+        if (self.isOn == true) {
+            switch sender.state {
+                case .began:
+                    initialCenter = WhichDisk.center
+                    lastPos = WhichDisk.center
+                    let new = self.disks[self.prevStack].popLast()
+                    print(new ?? "Disk Error")
+                case .changed:
+                    let translation = sender.translation(in: view)
+                    WhichDisk.center = CGPoint(x: initialCenter.x + translation.x,
+                                                  y: initialCenter.y + translation.y)
+                case .ended,
+                     .cancelled:
+                    self.isOn = false
+                    if ((self.WhichDisk.frame.midX >= self.view.layer.frame.width / 3) && (WhichDisk.center.x < 220)){
+                        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                            self.moveDisk(1, 171)
+                        }, completion: nil)
+                    } else if WhichDisk.center.x >= 220 {
+                        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                            self.moveDisk(2, 279)
+                        }, completion: nil)
+                    } else if WhichDisk.center.x < 120{
+                        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                            self.moveDisk(0, 67)
+                        }, completion: nil)
+                    } else {
+                        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: [.curveEaseInOut]) {
+                                self.WhichDisk.center = self.initialCenter
+                        }
                     }
+                default:
+                    break
                 }
-            default:
-                break
-            }
+        }
     }
 }
 
