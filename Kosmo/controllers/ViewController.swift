@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var thumbnail: UIButton!
     @IBOutlet weak var thumbVideo: UIImageView!
     @IBOutlet weak var navHeader: UINavigationItem!
+    @IBOutlet weak var headerBackground: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
         thumbVideo.layer.shadowColor = UIColor.darkGray.cgColor
         thumbVideo.layer.shadowOpacity = 0.2
         thumbVideo.layer.shadowOffset = .zero
+//        headerBackground.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     }
     
 //      hide navbar in hompage
