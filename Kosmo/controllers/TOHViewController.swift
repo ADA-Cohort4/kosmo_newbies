@@ -78,6 +78,22 @@ class TOHViewController: UIViewController {
         btnStack3.addGestureRecognizer(panGestureRecognizer3)
         // goal Mark
         goalMark.layer.cornerRadius = 8
+        let back = UIImage(named: "chevron.backward")
+        let backView = UIImageView(image: back)
+        backView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(backConfirm(_:)))
+        backView.addGestureRecognizer(tap)
+        let backItem = UIBarButtonItem(customView: backView)
+        navigationItem.leftBarButtonItem = backItem
+    }
+    
+    @IBAction func backConfirm(_ sender: UIBarButtonItem){
+        let alertController = UIAlertController(title: "Anda Yakin?", message: "Seluruh progres akan hilang.", preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Ya", style: .default, handler: { action in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        alertController.addAction(UIAlertAction(title: "Tidak", style: .cancel, handler: nil))
+        self.present(alertController, animated: true)
     }
     
     @IBAction func btn1 (_ sender: UIButton) {
