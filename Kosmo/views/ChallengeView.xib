@@ -25,8 +25,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6p-qH-XlA">
-                    <rect key="frame" x="20" y="117" width="350" height="187"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6p-qH-XlA">
+                    <rect key="frame" x="20" y="117" width="350" height="190"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="190" id="Z6p-Z4-Gb6"/>
                     </constraints>
@@ -63,8 +63,8 @@ Selamat mencoba.</string>
                         <action selector="handleStart:" destination="-1" eventType="touchUpInside" id="oSJ-rA-PMc"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="instruction-71" translatesAutoresizingMaskIntoConstraints="NO" id="87Z-AP-WC9">
-                    <rect key="frame" x="-62" y="323" width="474" height="126"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instruction-71" translatesAutoresizingMaskIntoConstraints="NO" id="87Z-AP-WC9">
+                    <rect key="frame" x="2" y="342" width="368" height="130"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="130" id="uOP-6j-E2l"/>
                     </constraints>

@@ -200,27 +200,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cY0-OW-iP3">
+                                <rect key="frame" x="165" y="8" width="60" height="5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="26Q-eS-0pz"/>
+                                    <constraint firstAttribute="width" constant="60" id="zic-qv-5Ze"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="waz-fg-nrQ" customClass="ChallengeView" customModule="Kosmo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="20" width="390" height="736"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WPd-br-8Ft"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="waz-fg-nrQ" firstAttribute="top" secondItem="WPd-br-8Ft" secondAttribute="top" id="0el-hY-1Jw"/>
+                            <constraint firstItem="waz-fg-nrQ" firstAttribute="top" secondItem="WPd-br-8Ft" secondAttribute="top" constant="20" id="0el-hY-1Jw"/>
+                            <constraint firstItem="cY0-OW-iP3" firstAttribute="leading" secondItem="WPd-br-8Ft" secondAttribute="leading" constant="165" id="2tj-RU-boo"/>
                             <constraint firstItem="WPd-br-8Ft" firstAttribute="bottom" secondItem="waz-fg-nrQ" secondAttribute="bottom" id="BPG-gP-Q1O"/>
+                            <constraint firstItem="cY0-OW-iP3" firstAttribute="top" secondItem="WPd-br-8Ft" secondAttribute="top" constant="8" id="Hkw-V6-sr2"/>
                             <constraint firstItem="waz-fg-nrQ" firstAttribute="leading" secondItem="WPd-br-8Ft" secondAttribute="leading" id="Pzw-bZ-Xwg"/>
                             <constraint firstItem="WPd-br-8Ft" firstAttribute="trailing" secondItem="waz-fg-nrQ" secondAttribute="trailing" id="Vm1-sY-Lzs"/>
+                            <constraint firstItem="WPd-br-8Ft" firstAttribute="trailing" secondItem="cY0-OW-iP3" secondAttribute="trailing" constant="165" id="tSM-Ab-Adp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="challengePopup" destination="waz-fg-nrQ" id="XMJ-MK-LAL"/>
+                        <outlet property="homeIndicator" destination="cY0-OW-iP3" id="5pL-Dt-IQl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WR-6S-4py" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="-301"/>
+            <point key="canvasLocation" x="1013.8461538461538" y="-301.42180094786727"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.45040619370000001" green="0.51162773370000003" blue="0.84710043670000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
